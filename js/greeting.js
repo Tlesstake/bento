@@ -9,11 +9,11 @@ var afterTxt = ', eat something for lunch this time';
 var evenTxt = ', it\'s still pretty early';
 
 if (Hr >= 0 && Hr < 6) {
-    document.getElementById('greetings').innerText = lateTxt + name;
+    document.getElementById('greetings').innerText = name + lateTxt;
 } else if (Hr >= 6 && Hr < 12) {
-    document.getElementById('greetings').innerText = morningTxt + name;
+    document.getElementById('greetings').innerText = name + morningTxt;
 } else if (Hr >= 12 && Hr < 17) {
-    document.getElementById('greetings').innerText = afterTxt + name;
+    document.getElementById('greetings').innerText = name + afterTxt;
 } else {
-    document.getElementById('greetings').innerText = evenTxt + name;
+    document.getElementById('greetings').innerText = name + evenTxt;
 }
